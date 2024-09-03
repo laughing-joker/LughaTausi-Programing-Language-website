@@ -2,7 +2,7 @@ import NavBar from "@/components/NavBar";
 import Footer from "@/components/Footer";
 import React from "react";
 
-const home = () => {
+const Landing = () => {
   return (
     <div className="w-screen min-h-screen">
       <div>
@@ -15,4 +15,4 @@ const home = () => {
   );
 };
 
-export default home;
+export default Landing;
