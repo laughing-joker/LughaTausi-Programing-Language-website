@@ -2,82 +2,145 @@
 import React from "react";
 import {
   FaFacebookF,
-  FaTwitter,
   FaInstagram,
-  FaLinkedinIn,
+  FaTwitter,
+  FaGoogle,
+  FaYoutube,
+  FaGithub,
 } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="w-screen bg-transparent fixed bottom-0 left-0 right-0 z-50">
-      <div className="bg-transparent backdrop-blur-md shadow-lg py-4 px-8 mt-2 rounded-md">
-        <div className="flex justify-between items-center">
-          {/* Logo on the left */}
-          <div className="flex-shrink-0">
-            <img src="/Logo.png" alt="Logo" className="h-10 w-auto" />
+    <div className="flex flex-col min-h-screen">
+      <div className="flex-grow">{/* Main content of the page */}</div>
+      <footer className="w-full bg-gray-900 text-white py-8 flex-shrink-0">
+        <div className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:justify-between sm:text-left sm:items-start sm:space-y-0 px-4">
+          {/* Contact Information */}
+          <div className="text-center sm:text-left">
+            <p className="text-sm">
+              Email:{" "}
+              <a
+                href="mailto:info.lughatausi@gmail.com"
+                className="text-purple-400 hover:text-purple-600"
+              >
+                info.lughatausi@gmail.com
+              </a>
+            </p>
+            <p className="text-sm">
+              Contact:{" "}
+              <a
+                href="tel:+255769298518"
+                className="text-purple-400 hover:text-purple-600"
+              >
+                +255769298518
+              </a>
+            </p>
           </div>
-          <div className="flex flex-col items-center space-y-2">
-            <div className="text-gray-600 text-sm">
-              <p>
-                Contact Us:{" "}
-                <a
-                  href="mailto:info@lughattaus.com"
-                  className="text-purple-400 hover:text-purple-600"
-                >
-                  info@lughattaus.com
-                </a>
-              </p>
-              <p>
-                Phone:{" "}
-                <a
-                  href="tel:+1234567890"
-                  className="text-purple-400 hover:text-purple-600"
-                >
-                  +123 456 7890
-                </a>
-              </p>
-            </div>
+
+          {/* Subscription Box */}
+          <div className="text-center sm:text-left">
+            <p className="text-sm">Subscribe to our newsletter:</p>
+            <form className="flex flex-col sm:flex-row sm:items-center space-y-2 sm:space-y-0">
+              <input
+                type="email"
+                placeholder="Enter your email"
+                className="px-2 py-1 rounded bg-gray-800 text-white focus:outline-none focus:ring-2 focus:ring-purple-600"
+              />
+              <button
+                type="submit"
+                className="ml-2 px-4 py-1 bg-purple-500 hover:bg-purple-700 text-white rounded"
+              >
+                Subscribe
+              </button>
+            </form>
           </div>
-        </div>
-        <div className="text-center text-gray-600 mt-4 text-sm">
-          <div className="flex space-x-4 mt-2 justify-center items-cen text-purple-400 hover:text-purple-600">
+
+          {/* Social Media Links */}
+          <div className="flex justify-center space-x-3">
             <a
               href="https://facebook.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-purple-600"
+              className="hover:opacity-75"
             >
-              <FaFacebookF size={20} /> {/* React Icon for Facebook */}
-            </a>
-            <a
-              href="https://twitter.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-purple-600"
-            >
-              <FaTwitter size={20} /> {/* React Icon for Twitter */}
+              <FaFacebookF
+                size={16}
+                className="text-purple-400 hover:text-purple-600"
+              />
             </a>
             <a
               href="https://instagram.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-purple-600"
+              className="hover:opacity-75"
             >
-              <FaInstagram size={20} /> {/* React Icon for Instagram */}
+              <FaInstagram
+                size={16}
+                className="text-purple-400 hover:text-purple-600"
+              />
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://twitter.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-purple-600"
+              className="hover:opacity-75"
             >
-              <FaLinkedinIn size={20} /> {/* React Icon for LinkedIn */}
+              <FaTwitter
+                size={16}
+                className="text-purple-400 hover:text-purple-600"
+              />
+            </a>
+            <a
+              href="https://google.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:opacity-75"
+            >
+              <FaGoogle
+                size={16}
+                className="text-purple-400 hover:text-purple-600"
+              />
+            </a>
+            <a
+              href="https://youtube.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:opacity-75"
+            >
+              <FaYoutube
+                size={16}
+                className="text-purple-400 hover:text-purple-600"
+              />
+            </a>
+
+            {/* Separator for GitHub */}
+            <div className="border-l border-gray-300 h-4 mx-2"></div>
+
+            <a
+              href="https://github.com/your-repo"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:opacity-75"
+            >
+              <FaGithub
+                size={16}
+                className="text-purple-400 hover:text-purple-600"
+              />
             </a>
           </div>
-          &copy; {new Date().getFullYear()} Lugha Tausi. All rights reserved.
         </div>
-      </div>
-    </footer>
+
+        {/* Slogan */}
+        <div className="text-center text-gray-400 text-xs mt-4">
+          "Empowering communication in every language."
+        </div>
+
+        {/* Copyright */}
+        <div className="text-center text-gray-500 text-xs mt-1">
+          &copy; {new Date().getFullYear()} Designed by Omni Standards
+        </div>
+      </footer>
+    </div>
   );
 };
 
