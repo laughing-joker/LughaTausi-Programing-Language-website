@@ -5,11 +5,11 @@ import HeroSection from "../../../components/Herosection";
 
 const Landing = () => {
   return (
-    <div className="w-screen h-full md:w-screen">
+    <div className="w-screen min-h-screen">
       <div>
         <NavBar />
       </div>
-      <div>
+      <div className="w-[1000]">
         <HeroSection />
       </div>
       <div>
