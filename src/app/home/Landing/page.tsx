@@ -2,6 +2,8 @@ import NavBar from "@/components/NavBar";
 import Footer from "@/components/Footer";
 import React from "react";
 import HeroSection from "../../../components/Herosection";
+import Card2 from "../../../components/Card2";
+import ProductFeaturesCard from "@/components/ProductFeaturesCard";
 
 const Landing = () => {
   return (
@@ -11,6 +13,12 @@ const Landing = () => {
       </div>
       <div className="w-[1000]">
         <HeroSection />
+      </div>
+      <div>
+        <Card2 />
+      </div>
+      <div>
+        <ProductFeaturesCard />
       </div>
       <div>
         <Footer />

@@ -5,7 +5,7 @@ const HeroSection = () => {
   return (
     <section className="bg-gradient-to-b from-purple-800 via-black to-black text-white min-h-screen flex flex-col justify-center items-center p-8 relative overflow-hidden">
       {/* Background Animation */}
-      <div className="absolute inset-0 bg-gradient-to-r from-purple-600 via-blue-500 to-purple-600 opacity-50 animate-pulse"></div>
+      <div className="absolute inset-0 bg-gradient-to-r from-purple-600 via-blue-500 to-purple-600 opacity-75 animate-pulse"></div>
 
       <div className="flex flex-col items-center text-center mt-24 z-10 relative">
         {/* Enlarged Text */}
@@ -27,7 +27,7 @@ const HeroSection = () => {
           className="rounded-full w-64 h-64 animate__animated animate__zoomIn animate__delay-1s"
         />
       </div>
-      <div className="mt-24 w-full flex justify-center z-10 relative">
+      <div className="mt-20 w-full flex justify-center z-10 relative">
         <div className="bg-gray-800 p-12 rounded-lg shadow-lg max-w-3xl w-full mx-auto relative overflow-hidden transform transition-transform duration-500 hover:scale-105 hover:rotate-6">
           <div className="relative z-10 p-6 flex flex-col items-center">
             <div className="w-full aspect-[1894/544] mb-4">
