@@ -3,6 +3,7 @@ import Footer from "@/components/Footer";
 import React from "react";
 import HeroSection from "../../../components/Herosection";
 import Card2 from "../../../components/Card2";
+import Card5 from "../../../components/Card5";
 import ProductFeaturesCard from "@/components/ProductFeaturesCard";
 
 const Landing = () => {
@@ -19,6 +20,9 @@ const Landing = () => {
       </div>
       <div>
         <ProductFeaturesCard />
+      </div>
+      <div>
+        <Card5 />
       </div>
       <div>
         <Footer />

@@ -26,7 +26,7 @@ const NavBar = () => {
               </Button>
             </Link>
 
-            <Link href="/home/About us">
+            <Link href="/home/About">
               <Button
                 as="a"
                 variant="link"
