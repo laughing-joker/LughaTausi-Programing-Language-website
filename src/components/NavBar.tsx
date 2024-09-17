@@ -1,9 +1,23 @@
 "use client";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
+import { Separator } from "@/components/ui/separator";
+import { PiTranslateBold } from "react-icons/pi";
+import { BsSun, BsMoon } from "react-icons/bs";
 
 const NavBar = () => {
+  const [darkMode, setDarkMode] = useState(false);
+
+  const toggleTheme = () => {
+    setDarkMode(!darkMode);
+    if (darkMode) {
+      document.documentElement.classList.remove("dark");
+    } else {
+      document.documentElement.classList.add("dark");
+    }
+  };
+
   return (
     <div className="w-screen fixed top-0 left-0 right-0 z-50">
       <div className="bg-gray-900 backdrop-blur-md shadow-md py-2 px-4 rounded-lg">
@@ -25,6 +39,7 @@ const NavBar = () => {
                 <span className="absolute block bottom-[-2px] left-0 w-full h-[2px] bg-purple-400 transition-transform duration-300 transform scale-x-0 origin-left hover:scale-x-100" />
               </Button>
             </Link>
+            <Separator className="w-[1px] h-5 bg-purple-400" />
 
             <Link href="/home/About">
               <Button
@@ -36,6 +51,24 @@ const NavBar = () => {
                 <span className="absolute block bottom-[-2px] left-0 w-full h-[2px] bg-purple-400 transition-transform duration-300 transform scale-x-0 origin-left hover:scale-x-100" />
               </Button>
             </Link>
+            <Separator className="w-[1px] h-5 bg-purple-400" />
+
+            {/* Translator Icon */}
+            <PiTranslateBold className="text-purple-400 hover:text-purple-600 text-lg transition-transform duration-300 ease-in-out transform hover:scale-110 hover:rotate-12 hover:text-purple-500" />
+
+            {/* Theme Toggle */}
+            <Button
+              className="text-purple-400 hover:text-purple-600 px-4 py-2 text-base font-medium transition duration-500 ease-in-out bg-transparent border border-purple-400 hover:bg-gradient-to-r from-purple-500 via-blue-500 to-purple-500 hover:text-white rounded-full shadow-md hover:shadow-xl transform hover:scale-110 hover:-translate-y-1"
+              onClick={toggleTheme}
+            >
+              {darkMode ? (
+                <BsSun className="text-lg transition-transform duration-500 ease-in-out transform hover:rotate-180" /> // Rotating effect
+              ) : (
+                <BsMoon className="text-lg transition-transform duration-500 ease-in-out transform hover:rotate-180" /> // Rotating effect
+              )}
+            </Button>
+
+            <Separator className="w-[1px] h-5 bg-purple-400" />
 
             <Link href="/home/Documentation">
               <Button
