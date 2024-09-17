@@ -16,21 +16,21 @@ const Footer = () => {
       <footer className="w-full bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 text-white py-8 flex-shrink-0">
         <div className="flex flex-col items-center justify-center space-y-6 sm:flex-row sm:justify-between sm:text-left sm:items-start sm:space-y-0 px-4 sm:px-8">
           {/* Contact Information */}
-          <div className="text-center sm:text-left font-bold text-lg sm:text-base text-gray-200 space-y-1">
-            <p className="transition-all duration-300 hover:text-purple-400">
+          <div className="text-center sm:text-left font-bold text-lg sm:text-base text-gray-300 space-y-1">
+            <p className="transition-colors duration-300 hover:text-purple-400">
               Email:{" "}
               <a
                 href="mailto:info.lughatausi@gmail.com"
-                className="text-purple-400 hover:text-purple-600"
+                className="text-purple-400 hover:text-purple-500"
               >
                 info.lughatausi@gmail.com
               </a>
             </p>
-            <p className="transition-all duration-300 hover:text-purple-400">
+            <p className="transition-colors duration-300 hover:text-purple-400">
               Contact:{" "}
               <a
                 href="tel:+255769298518"
-                className="text-purple-400 hover:text-purple-600"
+                className="text-purple-400 hover:text-purple-500"
               >
                 +255769298518
               </a>
@@ -39,18 +39,18 @@ const Footer = () => {
 
           {/* Subscription Box */}
           <div className="text-center sm:text-left">
-            <p className="text-sm font-semibold text-gray-300">
+            <p className="text-sm font-semibold text-gray-300 mb-2">
               Subscribe to our newsletter:
             </p>
             <form className="flex flex-col sm:flex-row sm:items-center space-y-2 sm:space-y-0">
               <input
                 type="email"
                 placeholder="Enter your email"
-                className="px-3 py-2 rounded bg-gray-800 text-white focus:outline-none focus:ring-2 focus:ring-purple-600 transition-all duration-300"
+                className="px-3 py-2 rounded bg-gray-800 text-white focus:outline-none focus:ring-2 focus:ring-purple-500 transition-colors duration-300"
               />
               <button
                 type="submit"
-                className="ml-2 px-4 py-2 bg-purple-500 hover:bg-purple-700 text-white rounded transition-all duration-300 hover:shadow-lg hover:shadow-purple-600/50"
+                className="ml-2 px-4 py-2 bg-purple-500 hover:bg-purple-600 text-white rounded transition-colors duration-300 hover:shadow-xl hover:shadow-purple-600/60"
               >
                 Subscribe
               </button>
@@ -63,55 +63,55 @@ const Footer = () => {
               href="https://facebook.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:opacity-75 transition-all duration-300 hover:text-purple-600"
+              className="transition-all duration-300 hover:opacity-75 hover:text-purple-500"
             >
               <FaFacebookF
                 size={24}
-                className="text-purple-400 hover:text-purple-600 transition-all duration-300 hover:shadow-lg hover:shadow-purple-600/50"
+                className="text-purple-400 hover:text-purple-500 transition-all duration-300 hover:shadow-xl hover:shadow-purple-600/60"
               />
             </a>
             <a
               href="https://instagram.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:opacity-75 transition-all duration-300 hover:text-purple-600"
+              className="transition-all duration-300 hover:opacity-75 hover:text-purple-500"
             >
               <FaInstagram
                 size={24}
-                className="text-purple-400 hover:text-purple-600 transition-all duration-300 hover:shadow-lg hover:shadow-purple-600/50"
+                className="text-purple-400 hover:text-purple-500 transition-all duration-300 hover:shadow-xl hover:shadow-purple-600/60"
               />
             </a>
             <a
               href="https://twitter.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:opacity-75 transition-all duration-300 hover:text-purple-600"
+              className="transition-all duration-300 hover:opacity-75 hover:text-purple-500"
             >
               <FaTwitter
                 size={24}
-                className="text-purple-400 hover:text-purple-600 transition-all duration-300 hover:shadow-lg hover:shadow-purple-600/50"
+                className="text-purple-400 hover:text-purple-500 transition-all duration-300 hover:shadow-xl hover:shadow-purple-600/60"
               />
             </a>
             <a
               href="https://google.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:opacity-75 transition-all duration-300 hover:text-purple-600"
+              className="transition-all duration-300 hover:opacity-75 hover:text-purple-500"
             >
               <FaGoogle
                 size={24}
-                className="text-purple-400 hover:text-purple-600 transition-all duration-300 hover:shadow-lg hover:shadow-purple-600/50"
+                className="text-purple-400 hover:text-purple-500 transition-all duration-300 hover:shadow-xl hover:shadow-purple-600/60"
               />
             </a>
             <a
               href="https://youtube.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:opacity-75 transition-all duration-300 hover:text-purple-600"
+              className="transition-all duration-300 hover:opacity-75 hover:text-purple-500"
             >
               <FaYoutube
                 size={24}
-                className="text-purple-400 hover:text-purple-600 transition-all duration-300 hover:shadow-lg hover:shadow-purple-600/50"
+                className="text-purple-400 hover:text-purple-500 transition-all duration-300 hover:shadow-xl hover:shadow-purple-600/60"
               />
             </a>
 
@@ -122,24 +122,24 @@ const Footer = () => {
               href="https://github.com/your-repo"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:opacity-75 transition-all duration-300 hover:text-purple-600"
+              className="transition-all duration-300 hover:opacity-75 hover:text-purple-500"
             >
               <FaGithub
                 size={20}
-                className="text-purple-400 hover:text-purple-600 transition-all duration-300 hover:shadow-lg hover:shadow-purple-600/50"
+                className="text-purple-400 hover:text-purple-500 transition-all duration-300 hover:shadow-xl hover:shadow-purple-600/60"
               />
             </a>
           </div>
         </div>
 
         {/* Slogan */}
-        <div className="text-center text-gray-400 text-xs mt-8 font-extrabold transition-all duration-300 hover:text-gray-200">
+        <div className="text-center text-gray-400 text-xs mt-8 font-extrabold transition-colors duration-300 hover:text-gray-300 cursor-default">
           "Enriching the younger generation, Empowering the future of our
           nation"
         </div>
 
         {/* Copyright */}
-        <div className="text-center text-gray-500 text-xs mt-1 transition-all duration-300 hover:text-gray-300">
+        <div className="text-center text-gray-500 text-xs mt-1 transition-colors duration-300 hover:text-gray-300 cursor-default">
           &copy; {new Date().getFullYear()} Designed by Omni Standards
         </div>
       </footer>
