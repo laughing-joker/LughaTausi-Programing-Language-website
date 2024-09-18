@@ -1,10 +1,12 @@
-import Image from "next/image";
 import Landing from "./home/Landing/page";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <Landing />
-    </main>
+    <div className="flex flex-col min-h-screen w-full">
+      <div className="flex-grow">
+        {/* Include Landing component */}
+        <Landing />
+      </div>
+    </div>
   );
 }

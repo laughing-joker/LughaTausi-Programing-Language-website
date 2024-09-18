@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import NavBar from "@/components/NavBar"; // Adjust the path as necessary
+import Footer from "@/components/Footer"; // Adjust the path as necessary
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -18,9 +20,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.className} bg-gradient-to-b from-gray-900 via-black to-gray-900 `}
+        className={`${inter.className} bg-gradient-to-b from-gray-900 via-black to-gray-900`}
       >
-        {children}
+        <NavBar />
+        <main className="flex-1">{children}</main>
+        <Footer />
       </body>
     </html>
   );

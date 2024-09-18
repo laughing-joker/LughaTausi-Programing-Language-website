@@ -1,28 +1,28 @@
-import Footer from "@/components/Footer";
-import NavBar from "@/components/NavBar";
+"use client";
 import Sidebar from "@/components/Sidebar"; // Import the Sidebar component
-import React from "react";
+import React, { useState } from "react";
 
 const Documentation = () => {
-  return (
-    <div className="relative w-screen min-h-screen flex">
-      {/* Sidebar */}
-      <Sidebar />
+  const [isSidebarOpen, setSidebarOpen] = useState(false);
 
-      <div className="flex-1 ml-64 p-6">
-        {/* Navbar */}
-        <NavBar />
+  const toggleSidebar = () => {
+    setSidebarOpen(!isSidebarOpen);
+  };
+
+  return (
+    <div className="flex flex-col min-h-screen">
+      <div className="flex flex-1">
+        {/* Sidebar */}
+        <Sidebar isOpen={isSidebarOpen} toggleSidebar={toggleSidebar} />
 
         {/* Main Content */}
-        <main className="pt-6">
-          {/* Your documentation content goes here */}
-          <h1 className="text-3xl font-bold mb-4">Documentation</h1>
-          <p className="text-gray-700">Welcome to the documentation page.</p>
-          {/* Add more content as needed */}
+        <main
+          className={`flex-1 p-4 ${
+            isSidebarOpen ? "ml-64" : "ml-0"
+          } transition-all duration-300`}
+        >
+          {/* Main content goes here */}
         </main>
-
-        {/* Footer */}
-        <Footer />
       </div>
     </div>
   );

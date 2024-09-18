@@ -1,5 +1,4 @@
-import NavBar from "@/components/NavBar";
-import Footer from "@/components/Footer";
+"use client";
 import React from "react";
 import HeroSection from "../../../components/Herosection";
 import Card2 from "../../../components/Card2";
@@ -8,24 +7,17 @@ import ProductFeaturesCard from "@/components/ProductFeaturesCard";
 
 const Landing = () => {
   return (
-    <div className="w-screen min-h-screen">
-      <div>
-        <NavBar />
-      </div>
-      <div className="w-[1000]">
+    <div className="flex flex-col items-center justify-center min-h-screen space-y-8 p-4 md:p-8">
+      {/* Hero Section */}
+      <div className="w-full">
         <HeroSection />
       </div>
-      <div>
+
+      {/* Responsive Cards Section */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-full">
         <Card2 />
-      </div>
-      <div>
-        <ProductFeaturesCard />
-      </div>
-      <div>
         <Card5 />
-      </div>
-      <div>
-        <Footer />
+        <ProductFeaturesCard />
       </div>
     </div>
   );

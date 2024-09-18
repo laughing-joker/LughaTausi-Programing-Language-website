@@ -1,6 +1,4 @@
 "use client";
-import Footer from "@/components/Footer";
-import NavBar from "@/components/NavBar";
 import Card from "@/components/Card3"; // Import the Card component
 import NewCard from "@/components/Card4"; // Import the NewCard component
 import Card6 from "@/components/Card6"; // Import the Card6 component
@@ -9,8 +7,6 @@ import React from "react";
 const About = () => {
   return (
     <div className="w-screen min-h-screen flex flex-col">
-      <NavBar />
-
       {/* Cards Section */}
       <div className="flex flex-wrap justify-center gap-8 p-6">
         <Card
@@ -44,7 +40,8 @@ const About = () => {
         <Card6
           title="Become a Developer for Our Product"
           description="Join our dynamic team and help us build innovative solutions that make a difference."
-          imageSrc="/developer.png" // Ensure the image path is correct
+          image
+          Src="/developer.png" // Ensure the image path is correct
           requirements={[
             "Strong proficiency in JavaScript and React",
             "Experience with backend technologies (e.g., Node.js, Express)",
@@ -54,8 +51,6 @@ const About = () => {
           applyLink="https://example.com/apply" // Replace with your application link
         />
       </div>
-
-      <Footer />
     </div>
   );
 };

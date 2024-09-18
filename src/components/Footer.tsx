@@ -1,3 +1,5 @@
+/* eslint-disable react/no-unescaped-entities */
+/* eslint-disable react/jsx-no-comment-textnodes */
 "use client";
 import React from "react";
 import {
@@ -134,8 +136,8 @@ const Footer = () => {
 
         {/* Slogan */}
         <div className="text-center text-gray-400 text-xs mt-8 font-extrabold transition-colors duration-300 hover:text-gray-300 cursor-default">
-          "Enriching the younger generation, Empowering the future of our
-          nation"
+          // eslint-disable-next-line react/no-unescaped-entities "Enriching the
+          younger generation, Empowering the future of our nation"
         </div>
 
         {/* Copyright */}

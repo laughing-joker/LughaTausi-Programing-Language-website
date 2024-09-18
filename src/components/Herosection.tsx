@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-
+import Link from "next/link";
 const HeroSection = () => {
   return (
     <section className="bg-gradient-to-b from-purple-800 via-black to-black text-white min-h-screen flex flex-col justify-center items-center p-8 relative overflow-hidden">
@@ -16,9 +16,11 @@ const HeroSection = () => {
           Discover the programming language that transforms complexity into
           simplicity. Join us and master the art of coding with ease!
         </p>
-        <button className="bg-transparent border-2 border-purple-600 text-white py-2 px-6 rounded-full hover:bg-purple-600 hover:border-transparent transition-all duration-300 transform hover:scale-110 animate__animated animate__pulse animate__delay-3s">
-          Jua Zaidi
-        </button>
+        <Link href="/home/About">
+          <button className="bg-transparent border-2 border-purple-600 text-white py-2 px-6 rounded-full hover:bg-purple-600 hover:border-transparent transition-all duration-300 transform hover:scale-110 animate__animated animate__pulse animate__delay-3s">
+            Jua Zaidi
+          </button>
+        </Link>
       </div>
       <div className="mt-12 flex justify-center relative z-10">
         <img
@@ -37,9 +39,11 @@ const HeroSection = () => {
                 className="w-full h-full object-cover"
               />
             </div>
-            <button className="bg-purple-600 text-white py-3 px-6 rounded-full hover:bg-purple-700 transition-all duration-300 animate__animated animate__pulse">
-              Learn More
-            </button>
+            <Link href="/home/Documentation">
+              <button className="bg-purple-600 text-white py-3 px-6 rounded-full hover:bg-purple-700 transition-all duration-300 animate__animated animate__pulse">
+                Learn More
+              </button>
+            </Link>
           </div>
         </div>
       </div>
