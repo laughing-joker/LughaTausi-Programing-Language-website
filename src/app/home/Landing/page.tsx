@@ -7,17 +7,22 @@ import ProductFeaturesCard from "@/components/ProductFeaturesCard";
 
 const Landing = () => {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen space-y-8 p-4 md:p-8">
+    <div className="flex flex-col items-center justify-center min-h-screen space-y-10 p-4 py-6 md:px-6">
       {/* Hero Section */}
       <div className="w-full">
         <HeroSection />
       </div>
 
-      {/* Responsive Cards Section */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-full">
+      {/* Responsive Cards Section - Each Card in a Row */}
+      <div className="grid grid-cols-1 gap-6 w-full">
         <Card2 />
-        <Card5 />
-        <ProductFeaturesCard />
+        <div className="flex flex-row">
+          <Card5 />
+        </div>
+
+        <div className="">
+          <ProductFeaturesCard className="w-full" />
+        </div>
       </div>
     </div>
   );

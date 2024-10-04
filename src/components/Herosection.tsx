@@ -3,7 +3,7 @@ import React from "react";
 import Link from "next/link";
 const HeroSection = () => {
   return (
-    <section className="bg-gradient-to-b from-purple-800 via-black to-black text-white min-h-screen flex flex-col justify-center items-center p-8 relative overflow-hidden">
+    <section className="bg-gradient-to-b from-purple-800 via-black to-black text-white min-h-screen flex flex-col justify-center items-center p-8 relative overflow-hidden rounded-2xl">
       {/* Background Animation */}
       <div className="absolute inset-0 bg-gradient-to-r from-purple-600 via-blue-500 to-purple-600 opacity-75 animate-pulse"></div>
 
@@ -18,7 +18,7 @@ const HeroSection = () => {
         </p>
         <Link href="/home/About">
           <button className="bg-transparent border-2 border-purple-600 text-white py-2 px-6 rounded-full hover:bg-purple-600 hover:border-transparent transition-all duration-300 transform hover:scale-110 animate__animated animate__pulse animate__delay-3s">
-            Jua Zaidi
+            About Us
           </button>
         </Link>
       </div>

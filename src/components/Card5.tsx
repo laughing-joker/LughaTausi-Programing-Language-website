@@ -32,7 +32,7 @@ const ToSample = ({ title, description, imageUrl, features }) => {
 
 const ToSampleCards = () => {
   return (
-    <div className="flex flex-wrap justify-center gap-10">
+    <div className="flex flex-row justify-center gap-2">
       <ToSample
         title="Super Fast Processor"
         description="Experience lightning-fast performance with the latest Gen 5 processor."
