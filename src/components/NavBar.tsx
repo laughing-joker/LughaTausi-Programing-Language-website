@@ -64,7 +64,7 @@ const NavBar = () => {
                 variant="link"
                 className="relative text-purple-400 text-sm font-medium no-underline focus:outline-none transition-colors duration-300 hover:text-purple-600"
               >
-                About Us
+                Explore
                 <span className="absolute block bottom-[-2px] left-0 w-full h-[2px] bg-purple-400 transition-transform duration-300 transform scale-x-0 origin-left hover:scale-x-100" />
               </Button>
             </Link>

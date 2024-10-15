@@ -1,9 +1,14 @@
-import Footer from "@/components/Footer";
-import NavBar from "@/components/NavBar";
 import React from "react";
+import LargeCardWithNestedCard from "@/components/LargeCard";
+import FullScreenCard from "@/components/DownloadCard2";
 
-const Download = () => {
-  return <div className="w-screen min-h-screen"></div>;
+const page = () => {
+  return (
+    <div>
+      <LargeCardWithNestedCard />
+      <FullScreenCard />
+    </div>
+  );
 };
 
-export default Download;
+export default page;

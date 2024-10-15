@@ -121,7 +121,7 @@ const Footer = () => {
             <div className="border-l border-gray-500 h-6 mx-3"></div>
 
             <a
-              href="https://github.com/your-repo"
+              href="https://github.com/lughatausi"
               target="_blank"
               rel="noopener noreferrer"
               className="transition-all duration-300 hover:opacity-75 hover:text-purple-500"
