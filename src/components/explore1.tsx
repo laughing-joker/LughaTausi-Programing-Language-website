@@ -1,21 +1,38 @@
-import React from 'react';
+import React from "react";
 
 const SplitCard = () => {
   return (
     <div className="flex h-[540px] w-full shadow-lg rounded-lg border border-gray-300 overflow-hidden">
-      {/* Left Side */}
-      <div className="w-1/2 p-6 flex flex-col justify-center items-center bg-gray-100">
-        <h2 className="text-xl font-bold text-gray-800 mb-2">Left Side</h2>
-        <p className="text-gray-700 text-center">This is the left side content of the card.</p>
+      {/* Left Side - Content */}
+      <div className="w-1/2 p-6 flex flex-col justify-center items-start bg-gray-100">
+        <h2 className="text-2xl font-bold text-gray-800 mb-4">
+          Karibu kwenye Lugha Tausi: Mabawa ya Ubunifu kwa Afrika
+        </h2>
+        <h3 className="text-xl font-semibold text-gray-800 mb-2">Maono Yetu</h3>
+        <p className="text-gray-700 leading-relaxed">
+          Lugha Tausi ni zaidi ya lugha ya programu; ni mwamko mpya kwa
+          teknolojia inayolenga jamii ya Afrika. Imeundwa kwa Kiswahili,
+          ikionyesha uzuri na rangi za mbawa za tausi, kila kipengele kikiwa na
+          nafasi maalum katika kukuza ubunifu na urahisi wa kutumia. Lugha Tausi
+          ni daraja linalounganisha wataalamu wa teknolojia na wale wanaotaka
+          kujiunga, kwa lengo la kuleta mapinduzi ya kiteknolojia kupitia lugha
+          yenye asili ya Kiafrika.
+        </p>
       </div>
 
       {/* Vertical Divider */}
       <div className="w-px bg-gray-300 h-full"></div>
 
-      {/* Right Side */}
+      {/* Right Side - Logo */}
       <div className="w-1/2 p-6 flex flex-col justify-center items-center bg-white">
-        <h2 className="text-xl font-bold text-gray-800 mb-2">Right Side</h2>
-        <p className="text-gray-700 text-center">This is the right side content of the card.</p>
+        {/* Placeholder for the Logo */}
+        <div className="flex justify-center items-center h-full">
+          <img
+            src="/Logo.png" // Replace this with the actual logo path
+            alt="Lugha Tausi Logo"
+            className="max-w-full max-h-full object-contain"
+          />
+        </div>
       </div>
     </div>
   );

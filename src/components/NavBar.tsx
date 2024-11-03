@@ -51,8 +51,7 @@ const NavBar = () => {
             <Link href="/home/Landing">
               <Button
                 variant="link"
-                className="relative text-purple-400 text-sm font-medium no-underline focus:outline-none transition-colors duration-300 hover:text-purple-600"
-              >
+                className="relative text-purple-400 text-sm font-medium no-underline focus:outline-none transition-colors duration-300 hover:text-purple-600">
                 Home
                 <span className="absolute block bottom-[-2px] left-0 w-full h-[2px] bg-purple-400 transition-transform duration-300 transform scale-x-0 origin-left hover:scale-x-100" />
               </Button>
@@ -62,8 +61,7 @@ const NavBar = () => {
             <Link href="/home/About">
               <Button
                 variant="link"
-                className="relative text-purple-400 text-sm font-medium no-underline focus:outline-none transition-colors duration-300 hover:text-purple-600"
-              >
+                className="relative text-purple-400 text-sm font-medium no-underline focus:outline-none transition-colors duration-300 hover:text-purple-600">
                 Explore
                 <span className="absolute block bottom-[-2px] left-0 w-full h-[2px] bg-purple-400 transition-transform duration-300 transform scale-x-0 origin-left hover:scale-x-100" />
               </Button>
@@ -98,8 +96,7 @@ const NavBar = () => {
             {/* Theme Button */}
             <Button
               onClick={toggleTheme}
-              className="text-purple-400 hover:text-purple-600 px-4 py-2 text-base font-medium transition duration-500 ease-in-out bg-transparent border border-purple-400 hover:bg-gradient-to-r from-purple-500 via-blue-500 to-purple-500 hover:text-white rounded-full shadow-md hover:shadow-xl transform hover:scale-110 hover:-translate-y-1"
-            >
+              className="text-purple-400 hover:text-purple-600 px-4 py-2 text-base font-medium transition duration-500 ease-in-out bg-transparent border border-purple-400 hover:bg-gradient-to-r from-purple-500 via-blue-500 to-purple-500 hover:text-white rounded-full shadow-md hover:shadow-xl transform hover:scale-110 hover:-translate-y-1">
               {isDarkMode ? (
                 <BsMoon className="text-lg transition-transform duration-500 ease-in-out transform hover:rotate-180" />
               ) : (
@@ -112,8 +109,7 @@ const NavBar = () => {
             <Link href="/home/Documentation">
               <Button
                 className="relative text-purple-100 bg-gradient-to-r from-purple-500 via-blue-500 to-purple-500 bg-size-200 bg-pos-0 hover:bg-pos-100 hover:bg-purple-600 hover:text-white text-sm transition duration-300 ease-in-out hover:animate-glow border border-purple-400 rounded-lg"
-                variant="ghost"
-              >
+                variant="ghost">
                 Documentation
               </Button>
             </Link>

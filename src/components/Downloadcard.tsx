@@ -20,8 +20,7 @@ const DownloadCard = () => {
       {/* Download Card */}
       <motion.div
         className="relative z-10 min-h-[350px] bg-black/40 backdrop-blur-lg shadow-2xl rounded-lg  p-8 flex flex-col space-y-6"
-        transition={{ type: "spring", stiffness: 100, damping: 10 }}
-      >
+        transition={{ type: "spring", stiffness: 100, damping: 10 }}>
         {/* Title with Flexible Alignment */}
         <motion.h2
           className="font-bold text-4xl text-purple-300 drop-shadow-lg text-center"
@@ -49,8 +48,7 @@ const DownloadCard = () => {
         <motion.div className="flex justify-center">
           <motion.button
             onClick={() => downloadFileAtURL(VERSION_2)}
-            className="bg-gradient-to-r from-purple-600 via-blue-500 to-purple-600 text-white font-semibold py-3 px-8 rounded-full shadow-lg transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-none hover:opacity-80"
-          >
+            className="bg-gradient-to-r from-purple-600 via-blue-500 to-purple-600 text-white font-semibold py-3 px-8 rounded-full shadow-lg transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-none hover:opacity-80">
             Download Now
           </motion.button>
         </motion.div>

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import NavBar from "@/components/NavBar"; // Adjust the path as necessary
 import Footer from "@/components/Footer"; // Adjust the path as necessary
+import { ThemeProvider } from "@/components/theme-provider"; // Replace with actual import
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -18,14 +19,21 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-        className={`${inter.className} bg-gradient-to-b from-gray-900 via-black to-gray-900`}
+    <html lang="en" suppressHydrationWarning>
+      <ThemeProvider
+        attribute="class"
+        defaultTheme="system"
+        enableSystem
+        disableTransitionOnChange
       >
-        <NavBar />
-        <main className="flex-1">{children}</main>
-        <Footer />
-      </body>
+        <body
+          className={`${inter.className} bg-gradient-to-b from-gray-900 via-black to-gray-900`}
+        >
+          <NavBar />
+          <main className="flex-1">{children}</main>
+          <Footer />
+        </body>
+      </ThemeProvider>
     </html>
   );
 }

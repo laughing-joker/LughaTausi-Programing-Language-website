@@ -6,7 +6,7 @@ import React from "react";
 
 const Documentation = () => {
   return (
-    <div className="flex flex-col min-h-screen items-center justify-center bg-gray-100 p-4">
+    <div className="flex min-h-screen items-center justify-center bg-transparent p-4">
       <Doc1 />
     </div>
   );
