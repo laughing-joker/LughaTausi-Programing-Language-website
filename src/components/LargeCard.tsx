@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
-import FullScreenCard from "./DownloadCard2";
 import DownloadCard from "./Downloadcard";
 
 const LargeCardWithNestedCard = () => {

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 const SplitCard = () => {
@@ -28,9 +29,11 @@ const SplitCard = () => {
       <div className="w-1/2 p-6 flex flex-col justify-center items-center bg-gradient-to-b from-gray-900 via-black to-gray-900">
         {/* Placeholder for the Logo */}
         <div className="flex justify-center items-center h-full">
-          <img
+          <Image
             src="/Logo.png" // Replace this with the actual logo path
             alt="Lugha Tausi Logo"
+            width={100} // Set the desired width for your logo
+            height={100} // Set the desired height for your logo
             className="max-w-full max-h-full object-contain"
           />
         </div>

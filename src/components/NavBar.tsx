@@ -11,6 +11,7 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
+import Image from "next/image";
 
 const NavBar = () => {
   // State for theme toggle
@@ -43,7 +44,13 @@ const NavBar = () => {
         <div className="flex justify-between items-center">
           {/* Logo */}
           <div>
-            <img src="/Logo.png" alt="Logo" className="h-10 w-auto" />
+            <Image
+              src="/Logo.png" // Ensure this path is correct and the image is in the public directory
+              alt="Logo"
+              width={40} // Equivalent to h-10 (height of 10)
+              height={40} // Maintain a proportional aspect ratio, or adjust as needed
+              className="w-auto" // Ensures the width is automatically adjusted based on aspect ratio
+            />
           </div>
 
           {/* Navigation Links */}

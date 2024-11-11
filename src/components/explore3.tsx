@@ -35,10 +35,11 @@ const Explore3 = () => {
           </h3>
           <p className="mb-4">
             Kujiunga na jamii ya Lugha Tausi ni rahisi. Unaweza kuanza kwa
-            kupitia "Feathers of Innovation"—kitabu kinachoelezea mchakato wa
-            kiufundi wa Lugha Tausi na misingi ya kubuni programu kwa Kiswahili.
-            Pia tunatoa tutorials, mafunzo ya video, na mifano ya msimbo ili
-            kuwasaidia watumiaji wa viwango vyote.
+            kupitia
+            <strong>Feathers of Innovation</strong>—kitabu kinachoelezea
+            mchakato wa kiufundi wa Lugha Tausi na misingi ya kubuni programu
+            kwa Kiswahili. Pia tunatoa tutorials, mafunzo ya video, na mifano ya
+            msimbo ili kuwasaidia watumiaji wa viwango vyote.
           </p>
           <h3 className="text-lg font-semibold mb-2">Matarajio Yetu</h3>
           <p className="mb-4">

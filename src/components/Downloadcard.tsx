@@ -5,11 +5,11 @@ import { motion } from "framer-motion";
 const VERSION_2 = "http://localhost:3000/LughaTausi.zip";
 
 const DownloadCard = () => {
-  const downloadFileAtURL = (url) => {
+  const downloadFileAtURL = (url: string) => {
     const fileName = url.split("/").pop();
     const aTag = document.createElement("a");
     aTag.href = url;
-    aTag.setAttribute("download", fileName);
+    aTag.setAttribute("download", fileName || "download");
     document.body.appendChild(aTag);
     aTag.click();
     document.body.removeChild(aTag);
@@ -19,25 +19,23 @@ const DownloadCard = () => {
     <div className="relative w-full mt-4 px-14 py-2 max-w-full mx-auto">
       {/* Download Card */}
       <motion.div
-        className="relative z-10 min-h-[350px] bg-black/40 backdrop-blur-lg shadow-2xl rounded-lg  p-8 flex flex-col space-y-6"
+        className="relative z-10 min-h-[350px] bg-black/40 backdrop-blur-lg shadow-2xl rounded-lg p-8 flex flex-col space-y-6"
         transition={{ type: "spring", stiffness: 100, damping: 10 }}>
         {/* Title with Flexible Alignment */}
         <motion.h2
           className="font-bold text-4xl text-purple-300 drop-shadow-lg text-center"
-          initial={{ opacity: 0, x: -20 }} // Start from transparent and move up
-          animate={{ opacity: 1, x: 0 }} // Fade in and move down to original position
-          transition={{ duration: 1.0 }} // Transition duration for smooth effect
-        >
+          initial={{ opacity: 0, x: -20 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1.0 }}>
           Download LughaTausi
         </motion.h2>
 
         {/* Description with Flexible Alignment */}
         <motion.p
           className="text-gray-300 text-center max-w-md mx-auto text-ellipsis"
-          initial={{ opacity: 0, y: 20 }} // Start from transparent and move down
-          animate={{ opacity: 1, y: 0 }} // Fade in and move up to original position
-          transition={{ duration: 0.8 }} // Slightly slower transition for smoothness
-        >
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}>
           Download{" "}
           <span className="text-purple-400 font-semibold">LughaTausi</span> and
           experience an intuitive design paired with powerful features that make

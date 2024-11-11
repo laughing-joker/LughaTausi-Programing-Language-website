@@ -2,11 +2,11 @@ import React from "react";
 
 const LTMANUAL = "http://localhost:3000/LTMANUAL.pdf";
 const Doc1 = () => {
-  const downloadFileAtURL = (url) => {
+  const downloadFileAtURL = (url: string) => {
     const fileName = url.split("/").pop();
     const aTag = document.createElement("a");
     aTag.href = url;
-    aTag.setAttribute("download", fileName);
+    aTag.setAttribute("download", fileName || "download");
     document.body.appendChild(aTag);
     aTag.click();
     document.body.removeChild(aTag);

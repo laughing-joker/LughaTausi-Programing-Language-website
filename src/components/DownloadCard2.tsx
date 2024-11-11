@@ -7,11 +7,11 @@ const VERSION_2 = "http://localhost:3000/LughaTausi.zip";
 const VERSION_2_0_1 = "http://localhost:3000/LughaTausiv2_0_1.zip";
 
 const FullScreenCard = () => {
-  const downloadFileAtURL = (url) => {
+  const downloadFileAtURL = (url: string) => {
     const fileName = url.split("/").pop();
     const aTag = document.createElement("a");
     aTag.href = url;
-    aTag.setAttribute("download", fileName);
+    aTag.setAttribute("download", fileName || "download");
     document.body.appendChild(aTag);
     aTag.click();
     document.body.removeChild(aTag);
@@ -22,8 +22,7 @@ const FullScreenCard = () => {
       className="w-full min-h-screen flex items-center justify-center bg-gradient-to-br from-purple-700 to-blue-600"
       initial={{ opacity: 0, scale: 0.8 }}
       animate={{ opacity: 1, scale: 1 }}
-      transition={{ duration: 0.6 }}
-    >
+      transition={{ duration: 0.6 }}>
       <div className="w-full h-screen flex items-center justify-center m-8">
         {/* Enhanced glassmorphism effect */}
         <div className="w-full h-screen bg-white/10 backdrop-blur-xl border border-white/20 rounded-xl shadow-2xl p-10 text-center">
@@ -36,16 +35,14 @@ const FullScreenCard = () => {
             <Button
               onClick={() => downloadFileAtURL(VERSION_2_0_1)}
               className="bg-gradient-to-r from-blue-500 to-purple-600 text-white text-2xl font-semibold px-6 py-3 rounded-lg shadow-lg hover:shadow-xl hover:scale-105 transform transition duration-300"
-              variant="link"
-            >
+              variant="link">
               Download Version 2.0.1
             </Button>
 
             <Button
               onClick={() => downloadFileAtURL(VERSION_2)}
               className="bg-gradient-to-r from-purple-600 to-pink-500 text-white text-2xl font-semibold px-6 py-3 rounded-lg shadow-lg hover:shadow-xl hover:scale-105 transform transition duration-300"
-              variant="link"
-            >
+              variant="link">
               Download Version 2.0
             </Button>
           </div>

@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 const HeroSection = () => {
   return (
@@ -29,10 +30,12 @@ const HeroSection = () => {
 
         {/* Logo Section */}
         <div className="mt-12 flex justify-center relative z-10">
-          <img
-            src="/Logo.png" // Ensure this path is correct
+          <Image
+            src="/Logo.png" // Ensure this path is correct and in the `public` directory
             alt="Tausi Logo"
-            className="rounded-full w-64 h-64 animate__animated animate__zoomIn animate__delay-1s"
+            width={256} // equivalent to w-64
+            height={256} // equivalent to h-64
+            className="rounded-full animate__animated animate__zoomIn animate__delay-1s"
           />
         </div>
 
@@ -41,10 +44,12 @@ const HeroSection = () => {
           <div className="bg-gray-800 p-12 rounded-lg shadow-lg max-w-3xl w-full mx-auto relative overflow-hidden transform transition-transform duration-500 hover:scale-105 hover:rotate-6">
             <div className="relative z-10 p-6 flex flex-col items-center">
               <div className="w-full aspect-[1894/544] mb-4">
-                <img
-                  src="/Tausi.png" // Ensure this path is correct
+                <Image
+                  src="/Tausi.png" // Ensure this path is correct and in the `public` directory
                   alt="Learn More"
-                  className="w-full h-full object-cover"
+                  layout="fill" // This makes the image fill the container
+                  objectFit="cover" // Ensures the image covers the container
+                  className="w-full h-full" // The image will take the full width and height of its container
                 />
               </div>
               <Link href="/home/Documentation">
@@ -90,7 +95,7 @@ const HeroSection = () => {
                 Scalability
               </h3>
               <p className="text-gray-300">
-                Easily scale your projects with Tausi's robust architecture and
+                Easily scale your projects with Tausi robust architecture and
                 flexible design patterns.
               </p>
             </div>
