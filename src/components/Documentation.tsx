@@ -1,6 +1,6 @@
 import React from "react";
 
-const LTMANUAL = "http://localhost:3000/LTMANUAL.pdf";
+const LTMANUAL = "http://lugha-tausi.vercel.app/LTMANUAL.pdf";
 const Doc1 = () => {
   const downloadFileAtURL = (url: string) => {
     const fileName = url.split("/").pop();

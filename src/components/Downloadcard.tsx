@@ -2,7 +2,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-const VERSION_2 = "http://localhost:3000/LughaTausi.zip";
+const VERSION_2 = "http://lugha-tausi.vercel.app/LughaTausi.zip";
 
 const DownloadCard = () => {
   const downloadFileAtURL = (url: string) => {

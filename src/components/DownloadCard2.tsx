@@ -3,8 +3,8 @@ import React from "react";
 import { motion } from "framer-motion";
 import { Button } from "./ui/button";
 
-const VERSION_2 = "http://localhost:3000/LughaTausi.zip";
-const VERSION_2_0_1 = "http://localhost:3000/LughaTausiv2_0_1.zip";
+const VERSION_2 = "http://lugha-tausi.vercel.app/LughaTausi.zip";
+const VERSION_2_0_1 = "http://lugha-tausi.vercel.app/LughaTausiv2_0_1.zip";
 
 const FullScreenCard = () => {
   const downloadFileAtURL = (url: string) => {
