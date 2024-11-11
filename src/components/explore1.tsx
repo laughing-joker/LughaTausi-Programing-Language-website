@@ -2,14 +2,15 @@ import React from "react";
 
 const SplitCard = () => {
   return (
-    <div className="flex h-[540px] w-full shadow-lg rounded-lg border border-gray-300 overflow-hidden">
+    <div className="flex h-[540px] w-full shadow-lg rounded-lg overflow-hidden">
       {/* Left Side - Content */}
-      <div className="w-1/2 p-6 flex flex-col justify-center items-start bg-gray-100">
-        <h2 className="text-2xl font-bold text-gray-800 mb-4">
+      <div className="w-1/2 p-6 flex flex-col justify-center items-start bg-gradient-to-b from-blue-500 to-purple-700 transition-all duration-500">
+        <h2 className="text-2xl font-bold text-white mb-4">
           Karibu kwenye Lugha Tausi: Mabawa ya Ubunifu kwa Afrika
         </h2>
-        <h3 className="text-xl font-semibold text-gray-800 mb-2">Maono Yetu</h3>
-        <p className="text-gray-700 leading-relaxed">
+        olojia (CTO):
+        <h3 className="text-xl font-semibold text-white mb-2">Maono Yetu</h3>
+        <p className="text-white leading-relaxed">
           Lugha Tausi ni zaidi ya lugha ya programu; ni mwamko mpya kwa
           teknolojia inayolenga jamii ya Afrika. Imeundwa kwa Kiswahili,
           ikionyesha uzuri na rangi za mbawa za tausi, kila kipengele kikiwa na
@@ -24,7 +25,7 @@ const SplitCard = () => {
       <div className="w-px bg-gray-300 h-full"></div>
 
       {/* Right Side - Logo */}
-      <div className="w-1/2 p-6 flex flex-col justify-center items-center bg-white">
+      <div className="w-1/2 p-6 flex flex-col justify-center items-center bg-gradient-to-b from-gray-900 via-black to-gray-900">
         {/* Placeholder for the Logo */}
         <div className="flex justify-center items-center h-full">
           <img
