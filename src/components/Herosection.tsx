@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const HeroSection = () => {
   return (
-    <div className="min-h-screen bg-black text-white ">
+    <div className="min-h-screen bg-black text-white">
       {/* Hero Section */}
       <section className="relative bg-gradient-to-b from-purple-800 via-black to-black text-white flex flex-col justify-center items-center p-8 overflow-hidden">
         {/* Background Animation */}
@@ -40,16 +40,17 @@ const HeroSection = () => {
         </div>
 
         {/* Call-to-action section */}
-        <div className="mt-20 w-full flex justify-center z-10 relative">
+        <div className="mt-20 w-full flex justify-center z-10 relative px-6 sm:px-8 lg:px-12">
           <div className="bg-gray-800 p-12 rounded-lg shadow-lg max-w-3xl w-full mx-auto relative overflow-hidden transform transition-transform duration-500 hover:scale-105 hover:rotate-6">
             <div className="relative z-10 p-6 flex flex-col items-center">
-              <div className="w-full aspect-[1894/544] mb-4">
+              <div className="w-full mb-4">
                 <Image
                   src="/Tausi.png" // Ensure this path is correct and in the `public` directory
                   alt="Learn More"
-                  layout="fill" // This makes the image fill the container
-                  objectFit="cover" // Ensures the image covers the container
-                  className="w-full h-full" // The image will take the full width and height of its container
+                  layout="intrinsic" // Maintains the image's natural size and aspect ratio
+                  width={500} // Replace with the actual width of your image
+                  height={150} // Replace with the actual height of your image
+                  className="w-auto h-auto" // Ensures the image fits well within its container
                 />
               </div>
               <Link href="/home/Documentation">
@@ -63,7 +64,7 @@ const HeroSection = () => {
       </section>
 
       {/* Features Section */}
-      <section className="bg-gray-900 text-gray-300 py-16 px-8">
+      <section className="bg-gray-900 text-gray-300 py-16 px-8 sm:px-12 lg:px-16">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl font-bold text-center mb-12">
             Features of Tausi
@@ -104,7 +105,7 @@ const HeroSection = () => {
       </section>
 
       {/* Benefits Section */}
-      <section className="bg-purple-800 text-gray-100 py-16 px-8">
+      <section className="bg-purple-800 text-gray-100 py-16 px-8 sm:px-12 lg:px-16">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl font-bold text-center mb-12">
             Benefits of Using Tausi
@@ -145,7 +146,7 @@ const HeroSection = () => {
       </section>
 
       {/* Getting Started Section */}
-      <section className="bg-gray-900 text-gray-100 py-16 px-8">
+      <section className="bg-gray-900 text-gray-100 py-16 px-8 sm:px-12 lg:px-16">
         <div className="max-w-6xl mx-auto text-center">
           <h2 className="text-4xl font-bold mb-8">Get Started with Tausi</h2>
           <p className="text-lg text-gray-300 mb-12">

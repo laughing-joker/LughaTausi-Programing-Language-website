@@ -1,17 +1,22 @@
 "use client";
+
 import React from "react";
 import HeroSection from "../../../components/Herosection";
 import ContributorCard from "@/components/ContributorCard";
 
 const Landing = () => {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen space-y-10 p-4 py-6 md:px-0">
+    <main className="flex flex-col items-center justify-center min-h-screen space-y-6">
       {/* Hero Section */}
-      <div className="w-full">
+      <section className="w-full">
         <HeroSection />
+      </section>
+
+      {/* Contributor Card */}
+      <section className="w-full">
         <ContributorCard />
-      </div>
-    </div>
+      </section>
+    </main>
   );
 };
 
