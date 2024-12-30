@@ -19,16 +19,16 @@ const Footer = () => {
         <div className="flex flex-col items-center justify-center space-y-6 sm:flex-row sm:justify-between sm:text-left sm:items-start sm:space-y-0 px-4 sm:px-8">
           {/* Contact Information */}
           <div className="text-center sm:text-left font-bold text-lg sm:text-base text-gray-300 space-y-1">
-            <p className="transition-colors duration-300 hover:text-purple-400">
+            <p className="transition-colors duration-300 ">
               Email:{" "}
               <a
-                href="mailto:info.lughatausi@gmail.com"
+                href="mailto:lughatausi@gmail.com"
                 className="text-purple-400 hover:text-purple-500"
               >
-                info.lughatausi@gmail.com
+                lughatausi@gmail.com
               </a>
             </p>
-            <p className="transition-colors duration-300 hover:text-purple-400">
+            <p className="transition-colors duration-300">
               Contact:{" "}
               <a
                 href="tel:+255769298518"
@@ -136,7 +136,7 @@ const Footer = () => {
 
         {/* Slogan */}
         <div className="text-center text-gray-400 text-xs mt-8 font-extrabold transition-colors duration-300 hover:text-gray-300 cursor-default">
-          // eslint-disable-next-line react/no-unescaped-entities "Enriching the
+          "Enriching the
           younger generation, Empowering the future of our nation"
         </div>
 
