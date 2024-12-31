@@ -62,56 +62,12 @@ const Footer = () => {
           {/* Social Media Links */}
           <div className="flex justify-center space-x-4">
             <a
-              href="https://facebook.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="transition-all duration-300 hover:opacity-75 hover:text-purple-500"
-            >
-              <FaFacebookF
-                size={24}
-                className="text-purple-400 hover:text-purple-500 transition-all duration-300 hover:shadow-xl hover:shadow-purple-600/60"
-              />
-            </a>
-            <a
-              href="https://instagram.com"
+              href="https://www.instagram.com/lugha_tausi?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
               target="_blank"
               rel="noopener noreferrer"
               className="transition-all duration-300 hover:opacity-75 hover:text-purple-500"
             >
               <FaInstagram
-                size={24}
-                className="text-purple-400 hover:text-purple-500 transition-all duration-300 hover:shadow-xl hover:shadow-purple-600/60"
-              />
-            </a>
-            <a
-              href="https://twitter.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="transition-all duration-300 hover:opacity-75 hover:text-purple-500"
-            >
-              <FaTwitter
-                size={24}
-                className="text-purple-400 hover:text-purple-500 transition-all duration-300 hover:shadow-xl hover:shadow-purple-600/60"
-              />
-            </a>
-            <a
-              href="https://google.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="transition-all duration-300 hover:opacity-75 hover:text-purple-500"
-            >
-              <FaGoogle
-                size={24}
-                className="text-purple-400 hover:text-purple-500 transition-all duration-300 hover:shadow-xl hover:shadow-purple-600/60"
-              />
-            </a>
-            <a
-              href="https://youtube.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="transition-all duration-300 hover:opacity-75 hover:text-purple-500"
-            >
-              <FaYoutube
                 size={24}
                 className="text-purple-400 hover:text-purple-500 transition-all duration-300 hover:shadow-xl hover:shadow-purple-600/60"
               />
