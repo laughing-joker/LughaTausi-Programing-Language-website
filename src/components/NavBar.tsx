@@ -10,7 +10,6 @@ const NavBar = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  // Initialize theme from localStorage or system preference
   useEffect(() => {
     const savedTheme = localStorage.getItem("theme");
     const systemPreference = window.matchMedia("(prefers-color-scheme: dark)").matches;
@@ -24,7 +23,6 @@ const NavBar = () => {
     }
   }, []);
 
-  // Toggle theme and save to localStorage
   const toggleTheme = () => {
     const newTheme = !isDarkMode;
     setIsDarkMode(newTheme);
@@ -39,11 +37,7 @@ const NavBar = () => {
   };
 
   return (
-    <div
-      className={`fixed top-0 left-0 right-0 z-50 w-full bg-gray-900 backdrop-blur-md shadow-md ${
-        isMenuOpen ? "transition-colors bg-opacity-90" : "bg-opacity-100"
-      }`}
-    >
+    <div className="absolute top-0 left-0 w-full z-50 bg-gray-900 bg-opacity-90 backdrop-blur-md shadow-lg rounded-lg">
       <div className="flex justify-between items-center py-2 px-4">
         {/* Logo */}
         <div>
@@ -59,36 +53,31 @@ const NavBar = () => {
         {/* Desktop Menu */}
         <div className="hidden md:flex space-x-3 items-center">
           <Link href="/home/Landing">
-            <Button variant="link" className="text-purple-400 text-sm font-medium hover:text-purple-600">
+            <Button variant="link" className="text-purple-400 text-sm font-medium hover:text-purple-200">
               Home
             </Button>
           </Link>
           <Separator className="w-[1px] h-5 bg-purple-400" />
           <Link href="/home/About">
-            <Button variant="link" className="text-purple-400 text-sm font-medium hover:text-purple-600">
+            <Button variant="link" className="text-purple-400 text-sm font-medium hover:text-gray-200">
               Explore
             </Button>
           </Link>
-
-          {/* Separator before the theme toggle */}
           <Separator className="w-[1px] h-5 bg-purple-400" />
-
-          {/* Desktop Theme Toggle (between Explore and Documentation) */}
           <Button
             onClick={toggleTheme}
-            className="text-purple-400 text-lg hover:text-purple-600 mx-2 "
+            className="text-purple-400 text-lg hover:text-purple-600 mx-2"
           >
             {isDarkMode ? <BsMoon className="w-4 h-4" /> : <BsSun className="w-4 h-4" />}
           </Button>
-
           <Separator className="w-[1px] h-5 bg-purple-400" />
           <Link href="/home/Documentation">
-            <Button className="relative text-purple-100 bg-gradient-to-r from-purple-500 via-blue-500 to-purple-500 bg-size-200 bg-pos-0 hover:bg-pos-100 hover:bg-purple-600 hover:text-white text-sm transition duration-300 ease-in-out hover:animate-glow border border-purple-400 rounded-lg">
+            <Button className="relative text-purple-100 bg-gradient-to-r from-purple-500 via-blue-500 to-purple-500 bg-size-200 bg-pos-0 hover:bg-pos-100 hover:bg-purple-600 hover:text-white text-sm transition duration-300 ease-in-out hover:animate-glow  rounded-lg">
               Documentation
             </Button>
           </Link>
           <Link href="/home/Download">
-            <Button className="relative text-white bg-gradient-to-r from-purple-600 via-indigo-500 to-purple-600 border border-transparent rounded-lg text-sm transition-all duration-500 hover:scale-105 hover:bg-gradient-to-r hover:from-purple-700 hover:via-indigo-600 hover:to-purple-700 focus:outline-none">
+            <Button className="relative text-white bg-gradient-to-r from-purple-600 via-indigo-500 to-purple-600 rounded-lg text-sm transition-all duration-500 transform hover:scale-110 hover:bg-gradient-to-r hover:from-purple-700 hover:via-indigo-600 hover:to-purple-700 focus:outline-none  shadow-lg">
               Download
             </Button>
           </Link>
@@ -96,15 +85,12 @@ const NavBar = () => {
 
         {/* Mobile Menu */}
         <div className="flex md:hidden items-center">
-          {/* Mobile Theme Toggle (to the left of the hamburger menu) */}
           <Button
             onClick={toggleTheme}
-            className={`text-purple-400 text-sm sm:text-lg hover:text-purple-600 mr-2`} // Adjust size for mobile
+            className="text-purple-400 text-sm sm:text-lg hover:text-purple-600 mr-2"
           >
-            {isDarkMode ? <BsMoon className="" /> : <BsSun className="" />}
+            {isDarkMode ? <BsMoon /> : <BsSun />}
           </Button>
-
-          {/* Hamburger Menu Button */}
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             className={`text-purple-400 text-sm sm:text-lg p-1 rounded-md hover:bg-purple-600 hover:text-white transition-all ${
@@ -116,11 +102,9 @@ const NavBar = () => {
         </div>
       </div>
 
-      {/* Mobile Menu Content */}
+      {/* Mobile Menu Dropdown */}
       {isMenuOpen && (
-        <div
-          className={`md:hidden bg-gray-900 text-purple-400 transition-all duration-500 ease-in-out`}
-        >
+        <div className="md:hidden bg-gray-900 text-purple-400 transition-all duration-500 ease-in-out p-4 w-full absolute top-full  left-0 z-50">
           <Link href="/home/Landing">
             <Button
               variant="ghost"

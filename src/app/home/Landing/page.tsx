@@ -6,7 +6,7 @@ import ContributorCard from "@/components/ContributorCard";
 
 const Landing = () => {
   return (
-    <main className="flex flex-col items-center justify-center min-h-screen space-y-2">
+    <main className="flex flex-col items-center justify-center min-h-screen space-y-8">
       {/* Hero Section */}
       <section className="w-full">
         <HeroSection />
