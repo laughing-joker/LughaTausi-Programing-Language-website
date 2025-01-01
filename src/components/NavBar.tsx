@@ -54,13 +54,13 @@ const NavBar = () => {
         <div className="hidden md:flex space-x-3 items-center">
           <Link href="/home/Landing">
             <Button variant="link" className="text-purple-400 text-sm font-medium hover:text-purple-200">
-              Home
+              Nyumbani
             </Button>
           </Link>
           <Separator className="w-[1px] h-5 bg-purple-400" />
           <Link href="/home/About">
             <Button variant="link" className="text-purple-400 text-sm font-medium hover:text-gray-200">
-              Explore
+              Gundua
             </Button>
           </Link>
           <Separator className="w-[1px] h-5 bg-purple-400" />
@@ -73,12 +73,12 @@ const NavBar = () => {
           <Separator className="w-[1px] h-5 bg-purple-400" />
           <Link href="/home/Documentation">
             <Button className="relative text-purple-100 bg-gradient-to-r from-purple-500 via-blue-500 to-purple-500 bg-size-200 bg-pos-0 hover:bg-pos-100 hover:bg-purple-600 hover:text-white text-sm transition duration-300 ease-in-out hover:animate-glow  rounded-lg">
-              Documentation
+              Nyaraka
             </Button>
           </Link>
           <Link href="/home/Download">
             <Button className="relative text-white bg-gradient-to-r from-purple-600 via-indigo-500 to-purple-600 rounded-lg text-sm transition-all duration-500 transform hover:scale-110 hover:bg-gradient-to-r hover:from-purple-700 hover:via-indigo-600 hover:to-purple-700 focus:outline-none  shadow-lg">
-              Download
+              Pakua
             </Button>
           </Link>
         </div>
@@ -110,7 +110,7 @@ const NavBar = () => {
               variant="ghost"
               onClick={() => setIsMenuOpen(false)}
               className="w-full text-left text-sm py-2">
-              Home
+              Nyumbani
             </Button>
           </Link>
           <Link href="/home/About">
@@ -118,7 +118,7 @@ const NavBar = () => {
               variant="ghost"
               onClick={() => setIsMenuOpen(false)}
               className="w-full text-left text-sm py-2">
-              Explore
+              Gundua
             </Button>
           </Link>
           <Link href="/home/Documentation">
@@ -126,7 +126,7 @@ const NavBar = () => {
               variant="ghost"
               onClick={() => setIsMenuOpen(false)}
               className="w-full text-left text-sm py-2">
-              Documentation
+              Nyaraka
             </Button>
           </Link>
           <Link href="/home/Download">
@@ -134,7 +134,7 @@ const NavBar = () => {
               variant="ghost"
               onClick={() => setIsMenuOpen(false)}
               className="w-full text-left text-sm py-2">
-              Download
+              Pakua
             </Button>
           </Link>
         </div>

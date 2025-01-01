@@ -9,10 +9,10 @@ const ContributorCard = () => {
     <div className="w-full mx-auto mt-0 px-4 sm:px-6 lg:px-4">
       <div className="min-h-[300px] bg-gray-900/40 backdrop-blur-md shadow-lg rounded-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300 p-6 sm:p-8 flex flex-col">
         <h2 className="font-bold text-xl sm:text-2xl mb-4 text-gray-100 text-center">
-          Contributors
+          Wachangiaji
         </h2>
 
-        {/* Avatar Row */}
+        {/* Safu ya Avatar */}
         <div className="flex flex-wrap justify-start gap-4 sm:gap-4 lg:gap-6">
           {["lughatausi", "laughing-joker", "blackhacker120"].map(
             (username, index) => (
@@ -30,7 +30,7 @@ const ContributorCard = () => {
                   damping: 20,
                 }}
               >
-                {/* Added anchor tag for navigation */}
+                {/* Kiungo cha kusogeza */}
                 <a
                   href={`https://github.com/${username}`}
                   target="_blank"
@@ -40,10 +40,10 @@ const ContributorCard = () => {
                   <Avatar className="w-14 h-14 sm:w-16 sm:h-16 md:w-20 md:h-20 border-4 border-gray-700 rounded-full">
                     <AvatarImage
                       src={`https://github.com/${username}.png`}
-                      alt={`Contributor ${index + 1}`}
+                      alt={`Mchangiaji ${index + 1}`}
                       className="w-full h-full object-cover"
                     />
-                    <AvatarFallback>CN</AvatarFallback>
+                    <AvatarFallback>MC</AvatarFallback>
                   </Avatar>
                 </a>
               </motion.div>
