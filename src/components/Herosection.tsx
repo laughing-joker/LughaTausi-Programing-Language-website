@@ -8,10 +8,8 @@ const HeroSection = () => {
     <div className="min-h-screen  text-white ">
       {/* Sehemu ya Kwanza */}
       <section className="relative bg-gradient-to-b from-purple-800 via-black to-black text-white flex flex-col justify-center items-center p-8 sm:p-12 lg:p-16 mx-8 overflow-hidden rounded-xl">
-
         {/* Mandhari ya Miondoko */}
         <div className="absolute inset-0 bg-gradient-to-r from-purple-600 via-blue-500 to-purple-600 opacity-75 animate-pulse"></div>
-
         <div className="flex flex-col items-center text-center  z-10 relative">
           {/* Maandishi Makubwa */}
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 text-purple-100 animate__animated animate__fadeIn animate__delay-1s">
@@ -27,7 +25,6 @@ const HeroSection = () => {
             </button>
           </Link>
         </div>
-
         {/* Sehemu ya Nembo */}
         <div className="mt-12 flex justify-center relative z-10">
           <Image
@@ -39,9 +36,8 @@ const HeroSection = () => {
           />
         </div>
       </section>
-
       {/* Sehemu ya Sifa */}
-      <section className="bg-gray-900 text-gray-300 py-16 px-8 sm:px-12 lg:px-16  mx-16 rounded-xl">
+      <section className="bg-gray-900 text-gray-300 py-16 px-8 sm:px-12 lg:px-16">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl sm:text-4xl font-bold text-center mb-8">
             Sifa za Tausi
@@ -67,9 +63,8 @@ const HeroSection = () => {
           </div>
         </div>
       </section>
-
       {/* Sehemu ya Faida */}
-      <section className="bg-purple-800 text-gray-100 py-16 px-8 sm:px-12 lg:px-16 mx-8 rounded-xl">
+      <section className="bg-purple-800 text-gray-100 py-16 px-8 sm:px-12 lg:px-16 ">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl sm:text-4xl font-bold text-center mb-8">
             Faida za Kutumia Tausi
@@ -97,9 +92,8 @@ const HeroSection = () => {
           </div>
         </div>
       </section>
-
       {/* Sehemu ya Kuanza */}
-      <section className="bg-gray-900 text-gray-100 py-16 px-8 sm:px-12 lg:px-16 mx-16 rounded-xl">
+      <section className="bg-gray-900 text-gray-100 py-16 px-8 sm:px-12 lg:px-16">
         <div className="max-w-6xl mx-auto text-center">
           <h2 className="text-3xl sm:text-4xl font-bold mb-8">
             Anza na Tausi
@@ -118,5 +112,4 @@ const HeroSection = () => {
     </div>
   );
 };
-
 export default HeroSection;

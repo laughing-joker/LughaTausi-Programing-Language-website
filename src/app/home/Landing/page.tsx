@@ -11,7 +11,6 @@ const Landing = () => {
       <section className="w-full">
         <HeroSection />
       </section>
-
       {/* Contributor Card */}
       <section className="w-full">
         <ContributorCard />

@@ -6,12 +6,11 @@ import { motion } from "framer-motion";
 
 const ContributorCard = () => {
   return (
-    <div className="w-full mx-auto mt-0 px-8 sm:px-6 lg:px-8">
+    <div className="w-full  mt-0 ">
       <div className="min-h-[300px] bg-gray-900 backdrop-blur-none shadow-lg rounded-lg overflow-hidden  p-6 sm:p-8 flex flex-col">
         <h2 className="font-bold text-xl sm:text-2xl mb-4 text-gray-100 text-center">
           Wachangiaji
         </h2>
-
         {/* Safu ya Avatar */}
         <div className="flex flex-wrap justify-start gap-4 sm:gap-4 lg:gap-6">
           {["lughatausi", "laughing-joker", "blackhacker120"].map(
