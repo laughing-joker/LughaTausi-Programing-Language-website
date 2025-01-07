@@ -13,8 +13,7 @@ import {
 
 const Footer = () => {
   return (
-    <div className="flex flex-col min-h-screen">
-      <div className="flex-grow">{/* Maudhui kuu ya ukurasa */}</div>
+    <div className="flex flex-col">
       <footer className="w-full bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 text-white py-8 flex-shrink-0">
         <div className="flex flex-col items-center justify-center space-y-6 sm:flex-row sm:justify-between sm:text-left sm:items-start sm:space-y-0 px-4 sm:px-8">
           {/* Taarifa za Mawasiliano */}

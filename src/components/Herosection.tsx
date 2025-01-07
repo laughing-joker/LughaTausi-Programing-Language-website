@@ -5,17 +5,17 @@ import Image from "next/image";
 
 const HeroSection = () => {
   return (
-    <div className="min-h-screen bg-black text-white mt-2">
+    <div className="min-h-screen  text-white ">
       {/* Sehemu ya Kwanza */}
-      <section className="relative bg-gradient-to-b from-purple-800 via-black to-black text-white flex flex-col justify-center items-center p-8 sm:p-12 lg:p-16 ml-10 mr-10 mb-10 overflow-hidden rounded-xl">
+      <section className="relative bg-gradient-to-b from-purple-800 via-black to-black text-white flex flex-col justify-center items-center p-8 sm:p-12 lg:p-16 mx-8 overflow-hidden rounded-xl">
 
         {/* Mandhari ya Miondoko */}
         <div className="absolute inset-0 bg-gradient-to-r from-purple-600 via-blue-500 to-purple-600 opacity-75 animate-pulse"></div>
 
-        <div className="flex flex-col items-center text-center mt-8 z-10 relative">
+        <div className="flex flex-col items-center text-center  z-10 relative">
           {/* Maandishi Makubwa */}
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 text-purple-100 animate__animated animate__fadeIn animate__delay-1s">
-            <span className="flex justify-start">Inua Akili Yako</span>
+            <span className="justify-center">Inua Akili Yako</span>
             <span className="block">Inua Msimbo Wako na Tausi</span>
           </h1>
           <p className="text-lg sm:text-xl text-purple-300 mb-6">
@@ -41,7 +41,7 @@ const HeroSection = () => {
       </section>
 
       {/* Sehemu ya Sifa */}
-      <section className="bg-gray-900 text-gray-300 py-16 px-8 sm:px-12 lg:px-16 mt-8">
+      <section className="bg-gray-900 text-gray-300 py-16 px-8 sm:px-12 lg:px-16  mx-16 rounded-xl">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl sm:text-4xl font-bold text-center mb-8">
             Sifa za Tausi
@@ -69,7 +69,7 @@ const HeroSection = () => {
       </section>
 
       {/* Sehemu ya Faida */}
-      <section className="bg-purple-800 text-gray-100 py-16 px-8 sm:px-12 lg:px-16 mt-8">
+      <section className="bg-purple-800 text-gray-100 py-16 px-8 sm:px-12 lg:px-16 mx-8 rounded-xl">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl sm:text-4xl font-bold text-center mb-8">
             Faida za Kutumia Tausi
@@ -99,7 +99,7 @@ const HeroSection = () => {
       </section>
 
       {/* Sehemu ya Kuanza */}
-      <section className="bg-gray-900 text-gray-100 py-16 px-8 sm:px-12 lg:px-16 mt-8">
+      <section className="bg-gray-900 text-gray-100 py-16 px-8 sm:px-12 lg:px-16 mx-16 rounded-xl">
         <div className="max-w-6xl mx-auto text-center">
           <h2 className="text-3xl sm:text-4xl font-bold mb-8">
             Anza na Tausi

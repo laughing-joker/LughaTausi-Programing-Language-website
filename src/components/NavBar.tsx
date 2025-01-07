@@ -7,19 +7,22 @@ import { BsSun, BsMoon, BsList, BsX } from "react-icons/bs";
 import { Separator } from "@/components/ui/separator";
 
 const NavBar = () => {
-  const [isDarkMode, setIsDarkMode] = useState(false);
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isDarkMode, setIsDarkMode] = useState<boolean>(false);
+  const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
 
   useEffect(() => {
-    const savedTheme = localStorage.getItem("theme");
-    const systemPreference = window.matchMedia("(prefers-color-scheme: dark)").matches;
+    // Ensure the code only runs in the browser
+    if (typeof window !== "undefined") {
+      const savedTheme = localStorage.getItem("theme");
+      const systemPreference = window.matchMedia("(prefers-color-scheme: dark)").matches;
 
-    if (savedTheme === "dark" || (!savedTheme && systemPreference)) {
-      setIsDarkMode(true);
-      document.documentElement.classList.add("dark");
-    } else {
-      setIsDarkMode(false);
-      document.documentElement.classList.remove("dark");
+      if (savedTheme === "dark" || (!savedTheme && systemPreference)) {
+        setIsDarkMode(true);
+        document.documentElement.classList.add("dark");
+      } else {
+        setIsDarkMode(false);
+        document.documentElement.classList.remove("dark");
+      }
     }
   }, []);
 

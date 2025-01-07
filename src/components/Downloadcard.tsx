@@ -27,7 +27,7 @@ const DownloadCard = () => {
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 1.0 }}>
-          Download LughaTausi
+          Pakua LughaTausi
         </motion.h2>
 
         {/* Description with Flexible Alignment */}
@@ -36,10 +36,10 @@ const DownloadCard = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}>
-          Download{" "}
-          <span className="text-purple-400 font-semibold">LughaTausi</span> and
-          experience an intuitive design paired with powerful features that make
-          development smooth, helping you focus on what really matters.
+          Pakua{" "}
+          <span className="text-purple-400 font-semibold">LughaTausi</span> na
+          pokea muundo rahisi kutumika ukiwa na vipengele vyenye nguvu vinavyofanya
+          maendeleo kuwa rahisi, na kukusaidia kuzingatia kile kinachohitajika zaidi.
         </motion.p>
 
         {/* Download Button with Flexible Alignment */}
@@ -47,7 +47,7 @@ const DownloadCard = () => {
           <motion.button
             onClick={() => downloadFileAtURL(VERSION_2)}
             className="bg-gradient-to-r from-purple-600 via-blue-500 to-purple-600 text-white font-semibold py-3 px-8 rounded-full shadow-lg transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-none hover:opacity-80">
-            Download Now
+            Pakua Sasa
           </motion.button>
         </motion.div>
       </motion.div>

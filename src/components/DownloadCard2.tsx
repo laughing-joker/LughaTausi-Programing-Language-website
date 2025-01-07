@@ -27,7 +27,7 @@ const FullScreenCard = () => {
         {/* Enhanced glassmorphism effect */}
         <div className="w-full h-screen bg-white/10 backdrop-blur-xl border border-white/20 rounded-xl shadow-2xl p-10 text-center">
           <h1 className="text-5xl font-extrabold text-white mb-10 tracking-wider">
-            Versions of Lugha Tausi
+            Matoleo ya Lugha Tausi
           </h1>
 
           {/* Flexbox layout for buttons */}
@@ -36,14 +36,14 @@ const FullScreenCard = () => {
               onClick={() => downloadFileAtURL(VERSION_2_0_1)}
               className="bg-gradient-to-r from-blue-500 to-purple-600 text-white text-2xl font-semibold px-6 py-3 rounded-lg shadow-lg hover:shadow-xl hover:scale-105 transform transition duration-300"
               variant="link">
-              Download Version 2.0.1
+              Pakua Toleo 2.0.1
             </Button>
 
             <Button
               onClick={() => downloadFileAtURL(VERSION_2)}
               className="bg-gradient-to-r from-purple-600 to-pink-500 text-white text-2xl font-semibold px-6 py-3 rounded-lg shadow-lg hover:shadow-xl hover:scale-105 transform transition duration-300"
               variant="link">
-              Download Version 2.0
+              Pakua Toleo 2.0
             </Button>
           </div>
         </div>

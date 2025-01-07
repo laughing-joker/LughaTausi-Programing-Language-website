@@ -6,8 +6,8 @@ import { motion } from "framer-motion";
 
 const ContributorCard = () => {
   return (
-    <div className="w-full mx-auto mt-0 px-4 sm:px-6 lg:px-4">
-      <div className="min-h-[300px] bg-gray-900/40 backdrop-blur-md shadow-lg rounded-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300 p-6 sm:p-8 flex flex-col">
+    <div className="w-full mx-auto mt-0 px-8 sm:px-6 lg:px-8">
+      <div className="min-h-[300px] bg-gray-900 backdrop-blur-none shadow-lg rounded-lg overflow-hidden  p-6 sm:p-8 flex flex-col">
         <h2 className="font-bold text-xl sm:text-2xl mb-4 text-gray-100 text-center">
           Wachangiaji
         </h2>
