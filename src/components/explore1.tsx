@@ -9,7 +9,6 @@ const SplitCard = () => {
         <h2 className="text-2xl font-bold text-white mb-4">
           Karibu kwenye Lugha Tausi: Mabawa ya Ubunifu kwa Afrika
         </h2>
-        olojia (CTO):
         <h3 className="text-xl font-semibold text-white mb-2">Maono Yetu</h3>
         <p className="text-white leading-relaxed">
           Lugha Tausi ni zaidi ya lugha ya programu; ni mwamko mpya kwa
@@ -28,13 +27,13 @@ const SplitCard = () => {
       {/* Right Side - Logo */}
       <div className="w-1/2 p-6 flex flex-col justify-center items-center bg-gradient-to-b from-gray-900 via-black to-gray-900">
         {/* Placeholder for the Logo */}
-        <div className="flex justify-center items-center h-full">
+        <div className="flex justify-center items-center w-full h-full">
           <Image
-            src="/Logo.png" // Replace this with the actual logo path
-            alt="Lugha Tausi Logo"
-            width={100} // Set the desired width for your logo
-            height={100} // Set the desired height for your logo
-            className="max-w-full max-h-full object-contain"
+            src="/Tausi.jpeg" // Replace this with the actual logo path
+            alt="Lugha Tausi Artwork"
+            className="w-full h-full object-contain rounded-lg"
+            width={400} // Customize for the image width based on your requirements
+            height={400} // Customize for the image height based on your requirements
           />
         </div>
       </div>

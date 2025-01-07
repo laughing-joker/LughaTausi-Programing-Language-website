@@ -1,11 +1,12 @@
+import Image from "next/image";
 import React from "react";
 
 const Explore3 = () => {
   return (
-    <div className="w-full h-[540px]  shadow-lg rounded-lg overflow-hidden">
+    <div className="w-full h-[540px] shadow-lg rounded-lg overflow-hidden">
       <div className="flex h-full">
         {/* Section One - Why Choose Lugha Tausi */}
-        <div className="bg-gradient-to-br from-blue-500 via-purple-500 to-blue-600 p-6 w-1/2 h-full overflow-y-auto text-white">
+        <div className="bg-gradient-to-br from-blue-500 via-purple-500 to-blue-600 p-6 w-full sm:w-1/2 h-full overflow-y-auto text-white">
           <h2 className="text-xl font-bold mb-4">
             Kwa Nini Uchague Lugha Tausi?
           </h2>
@@ -55,14 +56,17 @@ const Explore3 = () => {
         </div>
 
         {/* Vertical Divider */}
-        <div className="w-px bg-gray-300 h-full"></div>
+        <div className="w-px bg-gray-300 h-full hidden sm:block"></div>
 
         {/* Section Two */}
-        <div className="bg-gradient-to-b from-gray-900 via-black to-gray-900 p-6 w-1/2 h-full">
-          <h2 className="text-xl font-bold mb-2 text-gray-800">Section Two</h2>
-          <p className="text-gray-700">
-            This is the second section of the card.
-          </p>
+        <div className="bg-gradient-to-b from-gray-900 via-black to-gray-900 p-6 w-full sm:w-1/2 h-full flex justify-center items-center">
+          <Image
+            src="/tausi.jpeg" // Replace this with the actual logo path
+            alt="Lugha Tausi Artwork"
+            className="w-full h-full object-contain max-w-full max-h-[90%] sm:max-h-full rounded-lg"
+            width={400} // Customize for the image width based on your requirements
+            height={400} // Customize for the image height based on your requirements
+          />
         </div>
       </div>
     </div>

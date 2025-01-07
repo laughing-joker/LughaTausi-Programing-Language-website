@@ -1,22 +1,30 @@
+import Image from "next/image";
 import React from "react";
 
 const Card = () => {
   return (
-    <div className="w-full h-[540px] b shadow-lg rounded-lg overflow-hidden">
-      <div className="flex h-full">
+    <div className="w-full h-[540px] shadow-lg rounded-lg overflow-hidden">
+      <div className="flex flex-col md:flex-row h-full">
         {/* Section One - Gray Background */}
-        <div className="bg-gradient-to-b from-gray-900 via-black to-gray-900 p-6 w-1/2 h-full">
-          <h2 className="text-xl font-bold mb-2">Section One</h2>
-          <p className="text-gray-700">
-            This is the first section of the card.
-          </p>
+        <div className="relative bg-gradient-to-b from-gray-900 via-black to-gray-900 p-6 w-full md:w-1/2 h-full">
+          {/* Container for Image */}
+          <div className="">
+            <Image
+              src="/Moyo.jpeg" // Replace with actual image path
+              alt="Lugha Tausi Artwork"
+              width={502} // Image width
+              height={200} // Image height
+         // Apply objectFit directly within style
+              className="rounded-lg"
+            />
+          </div>
         </div>
 
         {/* Vertical Divider */}
-        <div className="w-px bg-gray-300 h-full"></div>
+        <div className="w-px bg-gray-300 h-full md:h-auto md:w-[1px] my-4 md:my-0"></div>
 
         {/* Section Two - Blue to Purple Gradient Background */}
-        <div className="bg-gradient-to-b from-blue-500 to-purple-700 p-6 w-1/2 h-full overflow-y-auto text-white">
+        <div className="bg-gradient-to-b from-blue-500 to-purple-700 p-6 w-full md:w-1/2 h-full overflow-y-auto text-white">
           <h2 className="text-xl font-bold mb-4">Timu Yetu</h2>
           <p className="mb-4">
             <strong>Mwanzilishi na Mtendaji Mkuu, CIO:</strong>
