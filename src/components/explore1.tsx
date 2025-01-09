@@ -29,7 +29,7 @@ const SplitCard = () => {
       <div className="w-[2px] bg-white h-full md:h-auto my-4 md:my-0 md:w-[2px]"></div> {/* Divider with adjustments for small screens */}
 
       {/* Right Side - Logo */}
-      <div className="w-full md:w-1/2 p-0 flex flex-col justify-center items-center md:items-end bg-gradient-to-b from-gray-900 via-black to-gray-900">
+      <div className="w-full md:w-1/2 flex flex-col justify-center items-center md:items-end bg-gradient-to-b from-gray-900 via-black to-gray-900">
         {/* Placeholder for the Logo */}
         <div className="flex justify-center md:justify-end w-full">
           <Image
