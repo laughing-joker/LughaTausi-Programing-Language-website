@@ -17,7 +17,8 @@ const ContributorCard = () => {
             "lughatausi", 
             "laughing-joker", 
             "blackhacker120", 
-            "ChrissTuruka" // Added GitHub user
+            "ChrissTuruka",
+            "wenses" // Added GitHub user
           ].map((username, index) => (
             <motion.div
               key={index}
