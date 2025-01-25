@@ -2,8 +2,13 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import NavBar from "@/components/NavBar"; // Adjust the path as necessary
 import Footer from "@/components/Footer"; // Adjust the path as necessary
-import { ThemeProvider } from "@/components/theme-provider"; // Replace with actual import
+import { ThemeProvider } from "@/components/theme-provider";
+import dynamic from "next/dynamic"; // For lazy loading
 import "./globals.css";
+
+const SarufiChatbox = dynamic(() => import("react-sarufi-chatbox"), {
+  ssr: false,
+});
 
 const inter = Inter({ subsets: ["latin"] });
 

@@ -14,11 +14,12 @@ const ContributorCard = () => {
         {/* Safu ya Avatar */}
         <div className="flex flex-wrap justify-start gap-4 sm:gap-4 lg:gap-6">
           {[
-            "lughatausi", 
-            "laughing-joker", 
-            "blackhacker120", 
+            "lughatausi",
+            "laughing-joker",
+            "blackhacker120",
             "ChrissTuruka",
-            "wenses" // Added GitHub user
+            "wenses", // Added GitHub user
+            "FESG3002", // Newly added user
           ].map((username, index) => (
             <motion.div
               key={index}
