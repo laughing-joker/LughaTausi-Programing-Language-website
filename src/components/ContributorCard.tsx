@@ -53,6 +53,36 @@ const ContributorCard = () => {
               </a>
             </motion.div>
           ))}
+          {/* Instagram Avatar */}
+          <motion.div
+            className="relative rounded-full overflow-hidden"
+            whileHover={{
+              scale: 1.1,
+              rotate: [0, -5, 5, 0],
+              boxShadow: "0px 0px 20px rgba(147, 112, 219, 0.8)", // Subtle purple glow
+            }}
+            transition={{
+              type: "spring",
+              stiffness: 300,
+              damping: 20,
+            }}
+          >
+            <a
+              href="https://www.instagram.com/thisismasako"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block"
+            >
+              <Avatar className="w-14 h-14 sm:w-16 sm:h-16 md:w-20 md:h-20 border-4 border-gray-700 hover:border-purple-400 rounded-full transition-all duration-300">
+                <AvatarImage
+                  src="https://instagram.com/thisismasako/profile_pic/?size=original"
+                  alt="Mchangiaji Instagram"
+                  className="w-full h-full object-cover"
+                />
+                <AvatarFallback>IM</AvatarFallback>
+              </Avatar>
+            </a>
+          </motion.div>
         </div>
       </div>
     </div>
