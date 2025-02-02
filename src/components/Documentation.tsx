@@ -1,6 +1,6 @@
 import React from "react";
 
-const LTMANUAL = "http://lugha-tausi.vercel.app/Mwongozo.pdf";
+const LTMANUAL = "https://lugha-tausi.vercel.app/Mwongozo.pdf";
 const Doc1 = () => {
   const downloadFileAtURL = (url: string) => {
     const fileName = url.split("/").pop();
