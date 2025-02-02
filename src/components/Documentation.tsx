@@ -1,6 +1,6 @@
 import React from "react";
 
-const LTMANUAL = "http://lugha-tausi.vercel.app/LTMANUAL.pdf";
+const LTMANUAL = "http://lugha-tausi.vercel.app/Mwongozo.pdf";
 const Doc1 = () => {
   const downloadFileAtURL = (url: string) => {
     const fileName = url.split("/").pop();
@@ -32,7 +32,9 @@ const Doc1 = () => {
             <li>Ufanisi kwenye majukwaa mbalimbali</li>
           </ul>
 
-          <h2 className="text-2xl md:text-3xl font-semibold mb-3">Usakinishaji</h2>
+          <h2 className="text-2xl md:text-3xl font-semibold mb-3">
+            Usakinishaji
+          </h2>
           <p className="text-gray-300 mb-4">
             Kwa lugha yetu ya programu, ni mchakato wa kuburuta na kuachia, na
             IDE tayari kwa matumizi kwenye Windows.
@@ -45,13 +47,15 @@ const Doc1 = () => {
             <code># install lughatausi</code>
           </pre>
 
-          <h2 className="text-2xl md:text-3xl font-semibold mb-3">Mfano wa Matumizi</h2>
+          <h2 className="text-2xl md:text-3xl font-semibold mb-3">
+            Mfano wa Matumizi
+          </h2>
           <p className="text-gray-300 mb-4">
             Hapa kuna mfano rahisi wa jinsi ya kutumia Lugha Tausi:
           </p>
           <pre className="bg-gray-800 p-4 rounded-md text-purple-300 mb-6">
             <code>
-            {`// Programu rahisi ya Hello World
+              {`// Programu rahisi ya Hello World
 jumbe("Habari, Ulimwengu!")`}
             </code>
           </pre>
@@ -66,7 +70,8 @@ jumbe("Hello, World!")`}
           <div className="flex justify-center mt-6">
             <button
               className="relative text-white bg-gradient-to-r from-purple-600 via-blue-500 to-purple-600 bg-size-200 bg-pos-0 hover:bg-pos-100 hover:text-white text-lg font-semibold transition duration-300 ease-in-out border border-purple-400 rounded-full py-3 px-8 shadow-md"
-              onClick={() => downloadFileAtURL(LTMANUAL)}>
+              onClick={() => downloadFileAtURL(LTMANUAL)}
+            >
               Pakua Hati
             </button>
           </div>
