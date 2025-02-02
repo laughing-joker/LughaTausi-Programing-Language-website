@@ -1,5 +1,3 @@
-"use client";
-
 import React from "react";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { motion } from "framer-motion";
@@ -53,7 +51,7 @@ const ContributorCard = () => {
               </a>
             </motion.div>
           ))}
-          {/* Instagram Avatar */}
+          {/* Instagram Avatar with manually added image */}
           <motion.div
             className="relative rounded-full overflow-hidden"
             whileHover={{
@@ -74,8 +72,9 @@ const ContributorCard = () => {
               className="block"
             >
               <Avatar className="w-14 h-14 sm:w-16 sm:h-16 md:w-20 md:h-20 border-4 border-gray-700 hover:border-purple-400 rounded-full transition-all duration-300">
+                {/* Manually added Instagram Profile Picture */}
                 <AvatarImage
-                  src="https://instagram.com/thisismasako/profile_pic/?size=original"
+                  src="/Masako.jpg" // Manually input image URL
                   alt="Mchangiaji Instagram"
                   className="w-full h-full object-cover"
                 />
