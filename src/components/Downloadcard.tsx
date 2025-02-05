@@ -2,7 +2,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-const VERSION_2 = "https://lugha-tausi.vercel.app/LughaTausi.zip";
+const VERSION_2_0_1 = "https://lugha-tausi.vercel.app/LughaTausi2.0.1.zip";
 
 const DownloadCard = () => {
   const downloadFileAtURL = (url: string) => {
@@ -49,7 +49,7 @@ const DownloadCard = () => {
         {/* Download Button with Flexible Alignment */}
         <motion.div className="flex justify-center">
           <motion.button
-            onClick={() => downloadFileAtURL(VERSION_2)}
+            onClick={() => downloadFileAtURL(VERSION_2_0_1)}
             className="bg-gradient-to-r from-purple-600 via-blue-500 to-purple-600 text-white font-semibold py-3 px-8 rounded-full shadow-lg transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-none hover:opacity-80"
           >
             Pakua Sasa

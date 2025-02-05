@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { Button } from "./ui/button";
 
 const VERSION_2 = "https://lugha-tausi.vercel.app/LughaTausi.zip";
-const VERSION_2_0_1 = "https://lugha-tausi.vercel.app/LughaTausiv2_0_1.zip";
+const VERSION_2_0_1 = "https://lugha-tausi.vercel.app/LughaTausiv2.0.1.zip";
 
 const FullScreenCard = () => {
   const downloadFileAtURL = (url: string) => {
