@@ -4,6 +4,8 @@ import NavBar from "@/components/NavBar"; // Adjust the path as necessary
 import Footer from "@/components/Footer"; // Adjust the path as necessary
 import { ThemeProvider } from "@/components/theme-provider";
 import dynamic from "next/dynamic"; // For lazy loading
+import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import "./globals.css";
 
 const SarufiChatbox = dynamic(() => import("react-sarufi-chatbox"), {
@@ -37,6 +39,8 @@ export default function RootLayout({
           <NavBar />
           <main className="flex-1">{children}</main>
           <Footer />
+          <Analytics />
+          <SpeedInsights />
         </body>
       </ThemeProvider>
     </html>
