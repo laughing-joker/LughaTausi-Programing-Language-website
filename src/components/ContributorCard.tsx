@@ -12,7 +12,6 @@ const ContributorCard = () => {
         {/* Safu ya Avatar */}
         <div className="flex flex-wrap justify-start gap-4 sm:gap-4 lg:gap-6">
           {[
-            "lughatausi",
             "laughing-joker",
             "blackhacker120",
             "ChrissTuruka",
