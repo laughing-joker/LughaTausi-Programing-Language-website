@@ -31,10 +31,10 @@ const Footer = () => {
             <p className="transition-colors duration-300">
               Mawasiliano:{" "}
               <a
-                href="tel:+255752497162"
+                href="tel:+255769298518"
                 className="text-purple-400 hover:text-purple-500"
               >
-                +255752497162
+                +255769298518
               </a>
             </p>
           </div>
