@@ -204,7 +204,7 @@ export default function HeroSection() {
               Hatua yako inaanza hapa
             </p>
             <h2 className="text-3xl font-black sm:text-5xl">
-              Wazo lako linaweza kuwa programu.
+              Wazo lako linaweza kuwa mwongozo.
             </h2>
             <p className="mx-auto mt-6 max-w-2xl leading-8 text-gray-300">
               Anza safari yako ya kujifunza Lugha Tausi na geuza
